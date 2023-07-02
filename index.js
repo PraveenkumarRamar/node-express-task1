@@ -7,7 +7,7 @@ const allRouter = require('./Routes/allRoom')
 const port = process.env.PORT || 9000
 app.use(express.json())
 
-app.use('/details',roomRouter)
+app.use('/',roomRouter)
 app.use('/booking-room',bookRouter)
 app.use('/allrooms', allRouter)
 
